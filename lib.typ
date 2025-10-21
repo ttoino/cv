@@ -79,12 +79,12 @@
 /// #example(`resume.github-link("DeveloperPaul123/awesome-resume")`)
 /// - github-path (string): The path to the Github project (e.g. "DeveloperPaul123/awesome-resume")
 /// -> none
-#let github-link(github-path) = {
+#let github-link(github-path, content) = {
   set box(height: 11pt)
 
-  align(right + horizon, link("https://github.com/" + github-path)[
-    #github-icon #github-path
-  ])
+  link("https://github.com/" + github-path)[
+    #github-icon #content
+  ]
 }
 
 /// Right section for the justified headers
@@ -145,7 +145,7 @@
 /// -> none
 #let resume(
   author: (:),
-  profile-picture: image,
+  profile-picture: none,
   date: datetime.today().display("[month repr:long] [day], [year]"),
   accent-color: default-accent-color,
   colored-headers: true,
@@ -295,7 +295,6 @@
         }
         if "scholar" in author {
           separator
-
           link(
             "https://scholar.google.com/citations?user=" + author.scholar,
           )[#google-scholar-icon #author.firstname #author.lastname]
@@ -306,7 +305,7 @@
         }
         if "website" in author {
           separator
-          link(author.website)[#website-icon #author.website]
+          link(author.website)[#website-icon #author.website.trim(regex("^(https?://)?(www\\.)?"))]
         }
         if "custom" in author and type(author.custom) == array {
           for item in author.custom {
@@ -425,7 +424,8 @@
 /// Styling for resume skill values/items
 /// - values (array): The skills to display
 #let resume-skill-values(values) = {
-  set text(size: 11pt, style: "normal", weight: "light")
+  set text(size: 11pt, style: "normal")
+  set strong(delta: 100)
   align(
     left,
     // This is a list so join by comma (,)
@@ -449,7 +449,7 @@
 
 /// Show a grid of skill lists with each row corresponding to a category of skills, followed by the skills themselves. The dictionary given to this function should have the skill categories as the dictionary keys and the values should be an array of values for the corresponding key.
 /// - categories-with-values (dictionary): key value pairs of skill categories and it's corresponding values (skills)
-#let resume-skill-grid(categories-with-values: (:)) = {
+#let resume-skill-grid(categories-with-values) = {
   set block(below: 1.25em)
   set pad(top: 2pt)
 
