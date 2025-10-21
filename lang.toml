@@ -1,0 +1,22 @@
+# Adapted from https://github.com/DeveloperPaul123/modern-cv/blob/b15709fbf61ca42090ff251b7b1870f646adf5f6/lang.toml
+
+[conf]
+default-lang = "en"
+
+[lang.en]
+resume = "Résumé"
+dear = "Dear"
+cover-letter = "Cover Letter"
+attached = "Attached"
+curriculum-vitae = "Curriculum Vitae"
+sincerely = "Sincerely"
+letter-position-pretext = "Job Application for"
+
+[lang.pt]
+resume = "Currículo"
+dear = "Caro(a)"
+cover-letter = "Carta de Apresentação"
+attached = "Em anexo"
+curriculum-vitae = "Currículo"
+sincerely = "Atenciosamente"
+letter-position-pretext = "Candidatura a emprego para"
