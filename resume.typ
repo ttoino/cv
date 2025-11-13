@@ -42,21 +42,48 @@
 
 #resume-item[
   - Provided support to students during practical classes and office hours
-  - Collaborated with professors to improve course materials and assignments
+  // - Collaborated with professors to improve course materials and assignments
+]
+
+= Associations
+
+#resume-entry(
+  title: "NIAEFEUP",
+  location: "Porto, Portugal",
+  date: "October 2022 - Present",
+  description: "Informatics Students Branch at FEUP",
+)
+
+#resume-item[
+  - Contributed to several open source projects used by students #h(1em) #text(weight: "light")[React, Javascript, Kotlin]
+  - Helped build the websites for SINF and ENEI, yearly informatics conferences, \ used by thousands of participants since 2023 #h(1em) #text(weight: "light")[Laravel, Vue, React, Typescript]
 ]
 
 = Projects
 
+// #resume-entry(
+//   title: "Mopidy Marceline",
+//   location: github-link("ttoino/mopidy-marceline")[],
+//   date: "March 2025 - Present",
+//   description: "Svelte, Tailwind, Typescript, Python",
+// )
+
+// #resume-item[
+//   - Designed and implemented a stylish frontend for Mopidy, a music server written in Python
+//   - Built using Svelte M3C, my own component library for Svelte based on Material design
+//   - Implemented a CI/CD pipeline using GitHub Actions to automate testing and deployment
+// ]
+
 #resume-entry(
-  title: "Mopidy Marceline",
-  location: github-link("ttoino/mopidy-marceline")[],
+  title: "Svelte M3C",
+  title-link: "https://svelte-m3c-next.toino.pt",
+  location: github-link("ttoino/svelte-m3c")[],
   date: "March 2025 - Present",
-  description: "Svelte, Tailwind, Typescript, Python",
+  description: "Svelte, Tailwind, Typescript",
 )
 
 #resume-item[
-  - Designed and implemented a stylish frontend for Mopidy, a music server written in Python
-  - Built using Svelte M3C, my own component library for Svelte based on Material design
+  - Developed a Tailwind and Svelte component library implementing Material 3, \ as well as its documentation website
   - Implemented a CI/CD pipeline using GitHub Actions to automate testing and deployment
 ]
 
@@ -87,18 +114,18 @@
   - Integrated several personal projects through CD pipelines using GitHub Actions
 ]
 
-#resume-entry(
-  title: "Meterial Symbols",
-  title-link: "https://meterial.toino.pt",
-  location: github-link("ttoino/meterial-symbols")[],
-  date: "August 2025 - September 2025",
-  description: "Python",
-)
+// #resume-entry(
+//   title: "Meterial Symbols",
+//   title-link: "https://meterial.toino.pt",
+//   location: github-link("ttoino/meterial-symbols")[],
+//   date: "August 2025 - September 2025",
+//   description: "Python",
+// )
 
-#resume-item[
-  - Created a variable font based on Google's Material Symbols, with support for a custom progress axis
-  - Developed a Python script to generate the variable font from individual SVG icons
-]
+// #resume-item[
+//   - Created a variable font based on Google's Material Symbols, with support for a custom progress axis
+//   - Developed a Python script to generate the variable font from individual SVG icons
+// ]
 
 = Education
 
@@ -112,7 +139,7 @@
 #resume-item[
   - Currently maintaining a grade of 17/20
   - Participated in an exchange semester at the University of Leiden in the Netherlands
-  - Relevant coursework: Mobile Application Development
+  // - Relevant coursework: Mobile Application Development
 ]
 
 #resume-entry(
@@ -149,5 +176,6 @@
     [Git],
     [Linux],
     [Github Actions],
+    [Figma],
   ),
 ))
