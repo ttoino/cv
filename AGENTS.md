@@ -36,8 +36,8 @@ GitHub Actions runs `nix flake check` on PRs/pushes to `main`/`develop`.
 
 ## Dependency Automation
 
-This project uses **Renovate** for dependency updates. Renovate opens a single monthly PR grouping all GitHub Actions updates. Lock-file maintenance is disabled for this minimal template.
+This project uses **Renovate** for dependency updates. Renovate opens a single monthly PR grouping all GitHub Actions updates, plus a monthly lock-file maintenance PR that refreshes any lock files (e.g. `flake.lock`, `pnpm-lock.yaml`).
 
 ## License
 
-GPL-3.0-or-later
+This project is proprietary and copyrighted. Do not add or distribute a public license.
